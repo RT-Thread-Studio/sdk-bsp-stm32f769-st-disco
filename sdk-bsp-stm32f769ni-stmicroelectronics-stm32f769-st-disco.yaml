@@ -1,0 +1,108 @@
+board:
+  buy_url_cn: https://www.st.com/zh/evaluation-tools/32f769idiscovery.html#sample-buy
+  buy_url_global: https://www.st.com/en/evaluation-tools/32f769idiscovery.html#sample-buy
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: STM32F769-ST-DISCO is a development board based on ARM Cortex-M7
+    kernel launched by ST. The highest frequency is 216MHz. The development board
+    has rich onboard resources, which can give full play to the chip performance of
+    STM32F769.
+  description_zh: STM32F769-ST-DISCO 是 ST 推出的一款基于 ARM Cortex-M7 内核的开发板，最高主频为 216Mhz，该开发板具有丰富的板载资源，可以充分发挥
+    STM32F769 的芯片性能。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32F769-ST-DISCO
+  price_cn: 516 CNY
+  price_global: 80 USD
+  sale_contact_cn: https://www.st.com/zh/evaluation-tools/32f769idiscovery.html
+  sale_contact_global: https://www.st.com/en/evaluation-tools/32f769idiscovery.html
+  small_image: documents/images/board_small.png
+  vendor: STMicroelectronics
+  version: 1.0.0
+chip:
+  chip_name: STM32F769NI
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F7
+  source_freq: '8000000'
+  sub_series_name: STM32F769
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: manual
+  file: documents/dm00276557-discovery-kit-with-stm32f769ni-mcu-stmicroelectronics.pdf
+  title: dm00276557-discovery-kit-with-stm32f769ni-mcu-stmicroelectronics
+example_projects: []
+features:
+- 'MCU: STM32F769NIH6, Main Frequency 216MHz, 2048KB Flash, 512KB RAM'
+- 'External RAM: Model MT48LC4M32B2, 128MB'
+- 'External Flash: Model MX25L51245G, 512MB'
+- 'LED: 3 PCS, LD1 (red, PJ13), LD2 (green, PJ5), LD3 (green, PA12)'
+- 'Keys: 1, User (with wake-up function, PA0)'
+- 'Audio: SAI Audio DAC'
+features_zh:
+- MCU：STM32F769NIH6，主频 216MHz，2048KB FLASH ，512KB RAM
+- 外部 RAM：型号 MT48LC4M32B2，128MB
+- 外部 FLASH：型号 MX25L51245G，512MB
+- LED：3个，LD1（红色，PJ13），LD2（绿色，PJ5），LD3（绿色，PA12）
+- 按键：1个，USER（兼具唤醒功能，PA0）
+- 音频：SAI音频DAC
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvoptx
+    - project.uvprojx
+    - README.md
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvoptx
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: stm32f769-st-disco
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
